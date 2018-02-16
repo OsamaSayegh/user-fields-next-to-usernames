@@ -1,0 +1,5 @@
+en:
+  js:
+    user_fields_next_to_usernames:
+      format: "%{field_name}: %{field_value}"
+      join: " @ "

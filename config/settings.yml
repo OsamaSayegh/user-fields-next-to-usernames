@@ -1,0 +1,7 @@
+plugins:
+  user_fields_next_to_usernames:
+    default: ""
+    type: list
+  user_fields_next_to_usernames_exclude_groups:
+    default: ""
+    type: list

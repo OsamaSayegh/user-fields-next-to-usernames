@@ -1,0 +1,4 @@
+en:
+  site_settings:
+    user_fields_next_to_usernames: "Choose which user fields you want to display next to usernames."
+    user_fields_next_to_usernames_exclude_groups: "Choose which users groups who won't have user fields displayed next to their usernames."
