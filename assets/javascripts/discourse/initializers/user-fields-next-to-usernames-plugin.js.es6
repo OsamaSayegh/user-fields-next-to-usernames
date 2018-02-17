@@ -14,6 +14,16 @@ function initializeWithApi(api) {
       if (match === undefined) return;
       results.push(I18n.t("user_fields_next_to_usernames.format", { field_name: field.name, field_value: match[field.id] }));
     })
+
+    Ember.run.schedule('afterRender', () => {
+      $('.names.trigger-user-card').each(function() {
+        // an ugly hack to make it compatible  with another plugin
+        // not sure if there is an event that we can listen to when
+        // widget is inserted into the dom
+        $(this).find('.display-user-fields').insertBefore($(this).find('div').first())
+      })
+    });
+
     return helper.h("span.display-user-fields", results.join(I18n.t("user_fields_next_to_usernames.join")));
   })
 }
